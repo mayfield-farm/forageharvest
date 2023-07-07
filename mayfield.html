@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayfield Site</title>
+    <style>
+        .heading{
+            font-size: 30px;
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .image{
+            width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+        .allpictures{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 10px;
+        }
+        .buttons{
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            padding-right: 20px;
+            margin-left: 0px;
+            background-color: rgb(18, 99, 18);
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            border: solid;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .buttons:hover{
+            background-color: white;
+            color: rgb(18, 99, 18); 
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h2>MAYFIELD FARM 2k23</h2>
+        <h4>For farmers around Kitale:</h4>
+        <p style="font-size: 20px;">Click the buttons to get prices.</p>
+    </div> 
+    <div class="allpictures">
+        <div>
+            <div>
+                <img class="image" src="mf275.jpg" alt="A pic of MF 275">
+            </div>
+            <div>
+                <button onclick="pricing()" class="buttons">TRACTORS</button>
+                <p id="detail"></p>
+            </div>  
+        </div>
+        <div>
+            <div>
+                <img class="image" src="forager.jpg" alt="A pic of a forager">
+            </div>
+            <div>
+                <button onclick="pricing2()" class="buttons">FODDER HARVESTER</button>
+                <p id="detail2"></p>
+            </div>     
+        </div>
+        <div>
+            <div>
+                <img class="image" src="drum-mower.jpg" alt="A pic of a mower">
+            </div>
+            <div>
+                <button onclick="pricing3()" class="buttons">DRUM MOWER</button>
+                <p id="detail3"></p>
+            </div>     
+        </div>
+        <div>
+            <div>
+                <img class="image" src="tractors.jpg" alt="A pic of 2 tractors">
+            </div>
+            <div>
+                <button onclick="pricing4()" class="buttons">ENSILING</button>
+                <p id="detail4"></p>
+            </div>     
+        </div> 
+    </div>     
+
+    <script>
+        function pricing(){
+            document.getElementById("detail").innerHTML = "FREE with services!";
+        }
+    </script>
+    <script>
+        function pricing2(){
+            document.getElementById("detail2").innerHTML = "15,000"
+        }
+    </script>
+    <script>
+        function pricing3(){
+            document.getElementById("detail3").innerHTML = "10,000"
+        }
+    </script>
+    <script>
+        function pricing4(){
+            document.getElementById("detail4").innerHTML = "20,000"
+        }
+    </script>
+
+    <div>
+        <h4 class="heading">CONTACT : 0757685420</h4>
+    </div>
+</body>
+</html>
